@@ -13,7 +13,6 @@ Nemesis v2.0 focuses on the features that support and streamline real-world use 
 - Automated file enrichment and analysis
 - Centralized file triage in a browser interface
 - Structured data storage and search
-- Finding credentials and "interesting information"
 
 <Tip>Learn more about our new philosophy for Nemesis v2.0 in our [blog post](https://specterops.io/blog/2025/08/05/nemesis-2-0/).</Tip>
 
@@ -23,7 +22,7 @@ Major changes in Nemesis v2.0 include:
 
 - **Simplified architecture** - Reduced complexity and improved flexibility by replacing Kubernetes with Docker Compose, removing Elasticsearch (consolidating all data storage in PostgreSQL), and dropping complex protobuf schemas.
 - **Dapr integration** - Integrated with [Dapr (Distributed Application Runtime)](https://specterops.github.io/Nemesis/dapr/) for workflow management, pub/sub messaging, and service invocation.
-- **New user interface (UI)** - Rebuilt the UI to focus on operator workflow and improve the file and findings triage user experience. Findings are actionable pieces of information extracted from files that operators require to perform triage.
+- **New user interface (UI)** - Rebuilt the UI to focus on operator workflow and improve the file and findings triage user experience.
 
 ### New features
 
@@ -34,12 +33,12 @@ This release includes the following new features:
 - **Dynamic Yara rules** - Add, edit, and manage [Yara rules](https://specterops.github.io/Nemesis/yara/) directly through the web interface.
 - **File tagging and filtering** - Organize and filter files based on your workflow needs with a [custom tagging](https://specterops.github.io/Nemesis/usage_guide/#file-tags) system.
 - **Collaborative triage** - Filter file views by [operator view and view state](https://specterops.github.io/Nemesis/usage_guide/#files) to streamline multi-player mass file triage.
-- **Smart alerting** - Integrate with messaging services, like Slack and Apprise to enable real-time [alert notifications](https://specterops.github.io/Nemesis/usage_guide/#alerting) for high-priority findings.
+- **Smart alerting** - Integrate with messaging services, like Slack and Apprise, to enable real-time [alert notifications](https://specterops.github.io/Nemesis/usage_guide/#alerting) for high-priority findings.
 - **Container build pipelines** - Build and publish Nemesis containers using our [GitHub Actions workflows](https://github.com/SpecterOps/Nemesis/tree/main/.github/workflows) for both x86 and ARM architectures.
 - **Enrichment modules** - Create new [enrichment modules](https://specterops.github.io/Nemesis/file_enrichment_modules/) faster using the redesigned module system.
 
 ### Try it out!
 
-Nemesis v2.0 is available now on [GitHub](https://github.com/SpecterOps/Nemesis). The [documentation](https://specterops.github.io/Nemesis/) has also been completely rewritten and includes comprehensive setup guides, usage examples, and development information.
+Nemesis v2.0 is available now on [GitHub](https://github.com/SpecterOps/Nemesis).
 
-Join us in the [#nemesis-chat](https://bloodhoundhq.slack.com/archives/C05KN15CCGP) channel in the [BloodHound Slack](https://ghst.ly/BHSlack) workspace for any questions or feedback, and feel free to [report any issues on GitHub](https://github.com/SpecterOps/Nemesis/issues). We hope that you're as excited as we are for this new rewrite!
+Join us in the [#nemesis-chat](https://bloodhoundhq.slack.com/archives/C05KN15CCGP) channel in the [BloodHound Slack](https://ghst.ly/BHSlack) workspace to ask questions and provide feedback. We also welcome [reporting issues in GitHub](https://github.com/SpecterOps/Nemesis/issues). We hope that you're as excited as we are for this new rewrite!
